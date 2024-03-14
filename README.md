@@ -1,2 +1,2 @@
 # Plane Detection NN
-Hypothetic repo for my first paper.
+Hypothetic repo for my first paper :)
