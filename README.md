@@ -1,2 +1,2 @@
-# plane_detection
-plane_detection
+# Plane Detection
+Hypothetic repo for my first paper.
