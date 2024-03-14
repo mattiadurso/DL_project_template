@@ -1,0 +1,18 @@
+data_path: ../data/mp3dlayout/validation
+image_size: 256
+
+model:
+  config: model_config.yaml
+
+training:
+  epochs: 10
+  lr: 0.002
+  batch_size: 32
+  shuffle: True
+  #add to map
+  loss_fn: mse
+  optim: sgd
+  scheduler: None
+
+wandb:
+  mode: disabled # online or disabled
