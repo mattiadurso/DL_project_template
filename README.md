@@ -17,5 +17,5 @@ Structure:
     └── utilis.py       # script with all the ancillar functions (e.g. train() or select_oprim())
 ├── LICENSE
 ├── README.md
-└── requirements.txt    # all python libraries needed (curently is set random)
+└── requirements.txt    # all python libraries needed (curently is set randomly)
 </pre>
