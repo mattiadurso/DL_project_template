@@ -4,8 +4,7 @@ import torch.nn as nn
 class MyModel(torch.nn.Module):
     def __init__(self):
         """
-        In the constructor we instantiate four parameters and assign them as
-        member parameters.
+        Dummy model sample
         """
         super().__init__()
         self.layers = nn.Sequential(
@@ -14,7 +13,7 @@ class MyModel(torch.nn.Module):
                         nn.Conv2d(3,3,1),
                         nn.SiLU(),
                         nn.Conv2d(3,1,1),
-                        nn.SiLU(),
+                        nn.SiLU()
                     )
 
     def forward(self, x):

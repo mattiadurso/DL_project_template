@@ -12,7 +12,7 @@ training:
   #add to map
   loss_fn: mse
   optim: sgd
-  scheduler: None
+  scheduler: none
 
 wandb:
   mode: disabled # online or disabled
