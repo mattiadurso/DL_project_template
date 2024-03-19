@@ -17,12 +17,10 @@ from matplotlib import pyplot as plt
 
 def train_one_epoch(model, train_loader, loss_fn, optimizer, scheduler=None):
     """
-    Trains a model for one epoch.
-
-    This function iterates over the training data loader, feeding batches of data 
-    to the model, calculating the loss between predictions and true labels, and 
-    updating the model's weights to improve performance. It tracks the total loss 
-    across the epoch and returns the average loss.
+    Trains a model for one epoch. This function iterates over the training data loader, 
+    feeding batches of data to the model, calculating the loss between predictions and 
+    true labels, and updating the model's weights to improve performance. It tracks the 
+    total loss across the epoch and returns the average loss.
 
     Args:
         model: The model to be trained (typically a subclass of nn.Module).

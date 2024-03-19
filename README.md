@@ -1,8 +1,8 @@
 # DL Project Template
-This is my repo for DL projects. It contains the structure and most of the base code used to build up a DL project. I hope to mantain this during time. LAST UPDATE 18/03/2024.
+This is my repo for DL projects. It contains the structure and most of the base code used to build up a DL project. I hope to mantain this during time.
 
 Reference for coding -> https://goodresearch.dev/_static/book.pdf <br>
-Running ```pylint``` for formatting. <br>
+
 
 Repo structure: 
 <pre>
@@ -19,7 +19,7 @@ Repo structure:
     └── utils.py            # Script with all the ancillar functions (e.g. train() or select_optim()).
 ├── .gitignore 
 ├── environment.yml    # All python libraries needed (curently is set randomly).
-├── README.md          # The read.me you are looking at.
+├── README.md          # The readme you are looking at.
 └── setup.py           # Make this project pip installable with `pip install -e`
 </pre>
 
@@ -27,3 +27,10 @@ Install src functions with: <br>
 ```
  pip install -e .
 ```
+Some useful tools:
+<pre>
+- Running ```pylint``` for formatting. 
+- Use Google style to document code and Sphinx to generate docs.
+- ```vulture``` a Python package to identify dead code in your codebase
+
+</pre>
