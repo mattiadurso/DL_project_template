@@ -1,10 +1,12 @@
-from torch.utils.data import Dataset
-import torchvision.transforms as T
-from tqdm.auto import tqdm
+"""Dataset Classes"""
+
 import glob
 import PIL
+from torch.utils.data import Dataset
+from tqdm.auto import tqdm
 
-class MP3DL_Dataset(Dataset):
+
+class MP3DL_dataset(Dataset):
     """
     Dataset for MP3D-layout dataset
     
@@ -24,23 +26,24 @@ class MP3DL_Dataset(Dataset):
         self.y = []
 
         if self.load_all:
-            for path in tqdm(self.x_data_path):
+            for self.path in tqdm(self.x_data_path):
                 self.x.append(
                     self.transform(PIL.Image.open(path))
                 )
-            for path in tqdm(self.y_data_path):
+            for self.path in tqdm(self.y_data_path):
                 self.y.append(
                     self.transform(PIL.Image.open(path))
                 )
-            
-        
+
+
     def __len__(self):
-        return len(self.x_data_path) if self.load_all == False else len(self.x)
-    
+        return len(self.x_data_path) if self.load_all is False else len(self.x)
+
+
     def __getitem__(self, idx):
         if self.load_all:
-           return self.x[idx]/self.x[idx].max(), self.y[idx]/self.y[idx].max()
-         
+            return self.x[idx]/self.x[idx].max(), self.y[idx]/self.y[idx].max()
+
         x = self.transform(PIL.Image.open(self.x_data_path[idx]))
         y = self.transform(PIL.Image.open(self.y_data_path[idx]))
 

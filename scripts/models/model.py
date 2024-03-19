@@ -1,11 +1,13 @@
+"""Model Class"""
+
 import torch
-import torch.nn as nn
+from torch import nn
 
 class MyModel(torch.nn.Module):
+    """
+    Dummy model sample
+    """
     def __init__(self):
-        """
-        Dummy model sample
-        """
         super().__init__()
         self.layers = nn.Sequential(
                         nn.Conv2d(3,3,1),
@@ -17,5 +19,7 @@ class MyModel(torch.nn.Module):
                     )
 
     def forward(self, x):
+        """
+        The forward method of the model
+        """
         return self.layers(x)
-

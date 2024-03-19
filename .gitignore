@@ -1,4 +1,5 @@
 data/mp3dlayout/*
 src/constants.py
-notebooks/wandb/*
+**/wandb/*
 **/__pycache__
+src.egg-info
